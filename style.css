@@ -1,0 +1,458 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    /* background color */
+    --background-color-bar: #dfdbdbc2;
+
+    /*color*/
+    --color-i-icon: #aaa1a1;
+    --color-card: #334155;
+
+}
+
+
+.bg-image {
+    background-image: url(images/w-bg-image.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-bar {
+    margin: 10px 150px;
+    border-radius: 10px;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+
+    /* Glassmorphism Defaults */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* CRITICAL: Smooth transition so the hover effect glides on and off */
+    transition: 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-bar:hover {
+    /* Brightens the glass background slightly */
+    background: rgba(255, 255, 255, 0.28);
+
+    /* The line-art border catches light and turns into a clean white edge */
+    border-color: rgba(255, 255, 255, 0.65);
+
+    /* Deepens the drop shadow so the bar feels like it physically lifts closer to the user */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+#image {
+    width: 50px;
+    height: 50px;
+    margin: 10px 80px;
+}
+
+#search {
+    height: 5vh;
+    width: 50%;
+    margin-left: -40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+#user,
+#home,
+#saved {
+    font-size: 35px;
+    color: var(--color-i-icon);
+}
+
+.whether-card {
+    height: 650px;
+    width: 450px;
+
+    /* Glassmorphism Defaults */
+    background: rgba(156, 152, 152, 0.544);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-1 {
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Glassmorphism Defaults */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+#city {
+    padding-top: 10px;
+    font-size: 40px;
+
+    /* A deep, rich charcoal blue-grey */
+    color: var(--color-card);
+    font-size: 2.2rem;
+    font-weight: 700;
+    /* Crisp and bold */
+    letter-spacing: -0.5px;
+    /* Tightens text for a premium UI feel */
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+#region {
+
+    padding-top: 10px;
+    font-size: 40px;
+    padding-left: 10px;
+    /* A deep, rich charcoal blue-grey */
+    color: var(--color-card);
+    font-size: 2.2rem;
+    font-weight: 700;
+    /* Crisp and bold */
+    letter-spacing: -0.5px;
+    /* Tightens text for a premium UI feel */
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+
+#img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: -10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#temperature {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color-card);
+}
+
+.info #show-info {
+    font-size: 30px;
+    color: var(--color-card);
+}
+
+.card-2 {
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+
+    /* Glassmorphism Defaults */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+.item1,
+.item2,
+.item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#img-pre {
+    height: 60px;
+    width: 60px;
+}
+
+#img-wind {
+    height: 60px;
+    width: 60px;
+}
+
+#img-humidity {
+    height: 60px;
+    width: 60px;
+}
+
+#h3-pre {
+    font-size: 15px;
+    color: var(--color-card);
+}
+
+#h3-wind {
+    font-size: 15px;
+    color: var(--color-card);
+}
+
+#h3-humidity {
+    font-size: 15px;
+    color: var(--color-card);
+}
+
+#pre {
+    font-size: 20px;
+    color: var(--color-card);
+}
+
+#wind {
+    font-size: 20px;
+    color: var(--color-card);
+}
+
+#humidity {
+    font-size: 20px;
+    color: var(--color-card);
+}
+
+.box {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+
+    /* Glassmorphism Defaults */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+
+    /* 2. FORCE SINGLE LINE */
+    white-space: nowrap;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: none;
+
+    /* Hide scrollbar for IE and old Edge */
+    -ms-overflow-style: none;
+
+    display: none;
+
+
+}
+
+#box::-webkit-scrollbar {
+    display: none;
+}
+
+#box-text {
+    color: var(--color-card);
+    font-size: 30px;
+    padding: 5px;
+}
+
+.saved-item {
+    cursor: pointer;
+    height: 12%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 800;
+    color: var(--color-card);
+}
+
+.i-saved {
+    position: fixed;
+    right: 30px;
+    height: 10px;
+    width: 10px;
+    font-size: 20px;
+}
+
+.week-item {
+    position: absolute;
+    left: 190px;
+    top: 150px;
+    width: 10%;
+    height: 45%;
+    border-radius: 10px;
+
+    /* Glassmorphism Defaults */
+    background: rgba(255, 255, 255, 0.359);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#week-forcast {
+    padding-top: 10px;
+    font-size: 20px;
+    color: var(--color-card);
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding-top: 15px;
+    padding-left: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+ul li {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: var(--color-card);
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        /* 1. Sets a solid matching dark base color underneath everything */
+        background-color: #151113 !important; 
+        
+        /* 2. Layer 1: A linear gradient that fades from transparent (top) to solid dark shadow (bottom)
+              Layer 2: Your background image locked to the top center */
+        background-image: 
+            linear-gradient(to bottom, rgba(21, 17, 19, 0) 0%, rgba(21, 17, 19, 1) 75%),
+            url("image_ad9de4.jpg") !important; 
+            
+        /* 3. Layout Control */
+        background-repeat: no-repeat !important;
+        background-position: top center !important;
+        background-size: 100% auto !important; /* Spreads the landscape image completely edge-to-edge */
+        
+        /* Ensure the body expands dynamically for the scroll height */
+        height: auto !important; 
+        min-height: 100vh;
+    }
+    
+    /* 1. Target your main container wrapper that holds the cards */
+    .container, .main-layout, body { 
+        display: flex !important;
+        flex-direction: column !important; /* Stack columns vertically instead of side-by-side */
+        align-items: center;
+        justify-content: flex-start;
+        height: auto !important;           /* Let the page grow vertically */
+        padding: 20px 10px;
+        gap: 20px;                         /* Put clean spacing between cards */
+        overflow-y: auto;                  /* Allow smooth scrolling on mobile */
+    }
+
+    /* 2. Fix the 7-Day Forecast panel wrapper sizing */
+    .week-item, .forecast-panel {
+        position: relative !important;     /* Remove absolute floating locks */
+        width: 90% !important;             /* Let it fill the screen layout width nicely */
+        max-width: 400px;
+        left: auto !important;             /* Clear absolute offsets */
+        top: auto !important;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;            /* Keeps padding inside the calculated width */
+    }
+
+    /* 3. Fix your central Main Temperature Card sizing */
+    .weather-card, .main-box {
+        width: 90% !important;
+        max-width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* 4. Fix your Saved Data popup box positioning */
+    .box {
+        position: fixed !important;        /* Lock it over the screen on mobile */
+        top: 80px !important;
+        right: 5% !important;
+        width: 90% !important;
+        max-width: 300px;
+        z-index: 999;                      /* Ensure it floats safely over everything else */
+    }
+
+    
+    .week-item h1, #week-forcast {
+        text-align: center;                /* Center the "7-Day Forecast" title */
+        font-size: 1.5rem !important;      /* Give it a bold, readable header size */
+        margin-bottom: 15px;
+    }
+
+    .week-item ul {
+        width: 100% !important;            /* Force the list container to spread out full width */
+        padding: 0 !important;             /* Strip out default browser padding shifts */
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;            /* Re-verify vertical structure items */
+        gap: 10px;                         /* Even vertical gaps between items */
+    }
+
+    .week-item li {
+        width: 100% !important;            /* Force each day line to take up the full card width */
+        font-size: 1.1rem !important;      /* Make the text large and premium to match desktop */
+        text-align: left;                  /* Align text clean to the left margin edge */
+        padding: 8px 12px;                 /* Add small spacing inside the lines */
+        background: rgba(255, 255, 255, 0.1); /* Optional: Soft glass backplates for individual days */
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+}

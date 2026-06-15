@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether_App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="bg-image">
+
+            <div class="top-bar">
+                <image src="images/logo.png" id="image"></image>
+                <input type="text" placeholder="Enter Your City!" id="search">
+
+                <div class="icon">
+                    <!-- <i class="fa-solid fa-user-circle" id="user"></i>
+                    <i class="fa-regular fa-house" id="home"></i> -->
+                    <i class="fa-regular fa-bookmark" id="saved"></i>
+                </div>
+            </div>
+
+            <div class="whether-card">
+                <div class="card-1">
+                    <h1><span id="city"></span><span id="region"></span></h1>
+                    <img src="https://openweathermap.org/img/wn/10d@4x.png" id="img" alt="Whether Status">
+                    <div class="info">
+                        <span id="temperature"></span>
+                        <h2 id="show-info"></h2>
+                    </div>
+                </div>
+
+                <div class="card-2">
+                    <div class="item1">
+                        <img src="https://cdn-icons-png.flaticon.com/512/414/414922.png" id="img-pre">
+                        <h3 id="h3-pre">precipitation</h3>
+                        <span id="pre">85%</span>
+                    </div>
+                    <div class="item2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3731/3731279.png" id="img-wind">
+                        <h3 id="h3-wind">Wind Speed</h3>
+                        <span id="wind">22km/h</span>
+                    </div>
+                    <div class="item3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3105/3105807.png" id="img-humidity">
+                        <h3 id="h3-humidity">Humidity</h3>
+                        <span id="humidity">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h1 id="box-text">Saved Data</h1>
+            </div>
+
+            <div class="week-item">
+                <h1 id="week-forcast">7-Day Forcast</h1>
+                <ul>
+                    <li>Mon: </li>
+                    <li>Tue: </li>
+                    <li>Wed: </li>
+                    <li>Thu: </li>
+                    <li>Fri: </li>
+                    <li>Sat: </li>
+                    <li>Sun: </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
